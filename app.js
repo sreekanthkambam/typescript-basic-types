@@ -1,4 +1,5 @@
-// number, string, boolean, arrays, object, tuple, enum, type aliasing
+// number, string, boolean, arrays, object, tuple,
+// enum, type aliasing, unknown, function type, never
 function add(n1, n2) {
     return n1 + n2;
 }
@@ -26,7 +27,18 @@ var Role;
 ;
 var tuple = [1, Role.ADMIN, 'User'];
 var role = Role.ADMIN;
+var userInput;
+var userName;
+userInput = 'Hello';
+if (typeof userInput === 'string') {
+    userName = userInput;
+}
 printMessage(add(n1, n2).toString(), false);
 person.properties.forEach(function (property) {
     printMessage(property, true);
 });
+var sampleFn;
+sampleFn = add;
+var throwError = function () {
+    throw 10;
+};

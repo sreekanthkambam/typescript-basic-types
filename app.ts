@@ -1,4 +1,5 @@
-// number, string, boolean, arrays, object, tuple, enum, type aliasing
+// number, string, boolean, arrays, object, tuple,
+// enum, type aliasing, unknown, function type, never
 function add(n1: number, n2: number): number {
     return n1 + n2;
 }
@@ -34,9 +35,23 @@ enum Role {
 const tuple: [number, Role, string] = [1, Role.ADMIN, 'User'];
 const role = Role.ADMIN;
 
+let userInput: unknown;
+let userName: string;
+
+userInput = 'Hello';
+if (typeof userInput === 'string') {
+    userName = userInput;
+}
+
 printMessage(add(n1, n2).toString(), false);
 
 person.properties.forEach((property) => {
     printMessage(property, true);
 });
 
+let sampleFn: (n1: number, n2: number) => number;
+sampleFn = add;
+
+const throwError = (): never => {
+    throw 10;
+}
