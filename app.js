@@ -42,3 +42,10 @@ sampleFn = add;
 var throwError = function () {
     throw 10;
 };
+var a;
+a = 2.8; // can't assign 'a' to other literal
+var b;
+b = 10;
+b = 'Sree';
+var c;
+c = 'Sree';

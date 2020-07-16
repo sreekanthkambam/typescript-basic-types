@@ -55,3 +55,13 @@ sampleFn = add;
 const throwError = (): never => {
     throw 10;
 }
+
+let a: 2.8;
+a= 2.8; // can't assign 'a' to other literal
+
+let b: number | string;
+b = 10;
+b = 'Sree';
+
+let c: 2 | true | 'Sree';
+c = 'Sree';
