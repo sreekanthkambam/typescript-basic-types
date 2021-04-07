@@ -13,7 +13,7 @@ function printMessage(message, addPrefix) {
 }
 var n1 = 10;
 var n2 = 20;
-var houses = ['Varthur', 'Gattahalli'];
+var houses = ['Varthur', 'Gattahalli', 'ATP'];
 var person = {
     name: 'Sreekanth',
     age: 30,

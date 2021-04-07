@@ -21,7 +21,7 @@ type Person = {
 
 const n1 = 10;
 const n2 = 20;
-const houses = ['Varthur', 'Gattahalli'];
+const houses = ['Varthur', 'Gattahalli', 'ATP'];
 const person: Person = {
     name: 'Sreekanth',
     age: 30,
